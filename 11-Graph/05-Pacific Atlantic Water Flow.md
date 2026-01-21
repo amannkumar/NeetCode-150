@@ -32,7 +32,7 @@ To avoid infinite loops, we temporarily mark the current cell as visited (here b
 | 1        | Backtracking | (O(m*n*4^{m\*n}))     | (O(m\*n))        |
 | 2        | DFS (Graph)  | (O(m\*n))             | (O(m\*n))        |
 | 3        | BFS (Graph)  | (O(m\*n))             | (O(m\*n))        |
-| 4        | DSU (Graph)  | (O(m*n*\alpha(m\*n))) | (O(m\*n))        |
+| 4        | DSU (Graph)  | (O(m\*n\* 4α(m\*n))) | (O(m\*n))        |
 
 ---
 
