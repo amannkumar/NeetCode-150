@@ -25,6 +25,20 @@ This is the most intuitive approach because it directly compares all possible pa
 - **Time Complexity:** `O(n log n)`
 - **Space Complexity:** `O(1)`
 
+```cpp
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+        sort(nums.begin(),nums.end());
+        for(int i=1;i<nums.size();i++) {
+            if(nums[i]==nums[i-1])
+                return true;
+        }
+        return false;
+    }
+};
+````
+
 ---
 
 ### **3️⃣ Use HashMap / HashSet**
@@ -32,25 +46,6 @@ This is the most intuitive approach because it directly compares all possible pa
 - **Time Complexity:** `O(n)`
 - **Space Complexity:** `O(n)`
 
----
-
-## **2️⃣ Sort the Array**
-
-````cpp
-class Solution {
-public:
-    bool containsDuplicate(vector<int>& nums) {
-        sort(nums.begin(), nums.end());
-        for (int i = 1; i < nums.size(); i++) {
-            if (nums[i] == nums[i - 1])
-                return true;
-        }
-        return false;
-    }
-};
-
-
-## **3️⃣ Solution Using HashMap / HashSet**
 ```cpp
 class Solution {                                                    class Solution {
 public:                                                             public:
